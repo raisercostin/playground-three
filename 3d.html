@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test3d</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three/build/three.module.js",
+          "OrbitControls": "https://unpkg.com/three/examples/jsm/controls/OrbitControls.js",
+          "dat-gui": "https://cs.wellesley.edu/~cs307/threejs/libs/dat.gui-r95.js"
+        }
+      }
+    </script>
+    <script type="module" src="3d.js"></script>
+  </body>
+</html>
