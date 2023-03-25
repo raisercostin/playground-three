@@ -1,28 +1,10 @@
 import * as THREE from "three";
 import { OrbitControls } from "https://threejs.org/examples/jsm/controls/OrbitControls.js";
-import * as dat from "dat-gui";
 
 var camera, scene, renderer;
 var geometry, material, mesh;
-var cameraParams = {
-  near: 10,
-  far: 30,
-  fov: 30,                    // degrees!!
-  aspectRatio: 400 / 300,       // usually from the dimensions of the canvas
-  atX: 0,
-  atY: 0,
-  atZ: -20,
-  eyeX: 0,
-  eyeY: 0,
-  eyeZ: 1,
-  upX: 0,
-  upY: 1,
-  upZ: 0
-};
 
 function init() {
-  var gui = new dat.GUI();
-  gui.add(cameraParams, 'fov', 1, 179).onChange(redo);
   const length = 12 * 100; // 12m in centimeters
   const radius = 0.8 / 2; // 0.8cm in radius
   const distance = 20; // 20cm distance between bars
